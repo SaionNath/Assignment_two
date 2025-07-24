@@ -129,3 +129,52 @@
   margin: 0 auto; 
 }
 
+/* badge styles */
+.badge {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 80px 0;
+  gap: 90px;
+  flex-wrap: wrap; 
+  max-width: 80%;  
+  margin: 0 auto; 
+}
+
+.badge_left {
+  background: url('../assets/flower-store.png');
+  width: 420px;
+  height: 470px;
+  position: relative;
+  border-radius: 8px;
+  overflow: visible;
+  margin-top: 80px;
+}
+
+/* Badge Icon */
+.badge_left::before {
+  content: "";
+  background: url('../assets/trusted-badge.png') no-repeat center center/contain;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: -150px;
+  right: -110px;
+  z-index: 2;
+}
+
+.badge_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.badge_right{
+  margin-top: 80px;
+}
+
+.badge_right p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
