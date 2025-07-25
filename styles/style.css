@@ -145,48 +145,50 @@ body {
 }
 
 .badge {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+  background-color: #f3f6fc;
   padding: 80px 0;
-  gap: 90px;
-  flex-wrap: wrap; 
-  max-width: 80%;  
-  margin: 0 auto; 
+}
+
+.badge_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .badge_left {
-  background: url('../assets/flower-store.png');
-  width: 420px;
-  height: 470px;
+  background: url('../assets/flower-store.png') no-repeat center center/cover;
+  width: 460px; 
+  height: 500px; 
   position: relative;
-  border-radius: 8px;
-  overflow: visible;
-  margin-top: 80px;
+  border-radius: 12px;
 }
 
-/* Badge Icon */
 .badge_left::before {
   content: "";
   background: url('../assets/trusted-badge.png') no-repeat center center/contain;
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: -150px;
-  right: -110px;
+  top: -100px;
+  right: -90px;
   z-index: 2;
   animation: spin 20s linear infinite;
   transform-origin: center;
+}
+
+.badge_right {
+  flex: 1;
+  min-width: 300px;
 }
 
 .badge_title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.badge_right{
-  margin-top: 80px;
 }
 
 .badge_des {
