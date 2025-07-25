@@ -135,6 +135,15 @@ body {
 }
 
 /* badge styles */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .badge {
   display: flex;
   justify-content: center; 
@@ -166,6 +175,8 @@ body {
   top: -150px;
   right: -110px;
   z-index: 2;
+  animation: spin 8s linear infinite;
+  transform-origin: center;
 }
 
 .badge_title {
@@ -425,3 +436,53 @@ body {
 }
 
 /* iPhone 14 and 15 Pro Responsive Fixes */
+@media screen and (max-width: 576px) {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+  overflow-x: hidden; 
+}
+
+.nav_right ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_right ul li {
+  display: none; 
+}
+
+.div_right_show {
+  display: block !important;
+}
+
+/* .div_right_show li {
+  display: list-item; 
+} */
+
+/* BANNER: Image first */
+.banner {
+  flex-direction: column-reverse;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.banner_left h3 {
+  font-size: 2rem;
+}
+
+.banner_left p {
+  font-size: 1rem;
+}
+
+.banner_right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+}
