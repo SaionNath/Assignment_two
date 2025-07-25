@@ -145,15 +145,21 @@ body {
 }
 
 .badge {
-  background-color: #f3f6fc;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
   padding: 80px 0;
+  gap: 90px;
+  flex-wrap: wrap; 
+  max-width: 80%;  
+  margin: 200px auto 0 auto;
 }
 
 .badge_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;         
   align-items: center;
-  gap: 60px;
+  gap: 80px;
   max-width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -161,20 +167,19 @@ body {
 
 .badge_left {
   background: url('../assets/flower-store.png') no-repeat center center/cover;
-  width: 460px; 
-  height: 500px; 
+  width: 520px;   
+  height: 560px;  
   position: relative;
-  border-radius: 12px;
 }
 
 .badge_left::before {
   content: "";
   background: url('../assets/trusted-badge.png') no-repeat center center/contain;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   position: absolute;
-  top: -100px;
-  right: -90px;
+  top: -110px;
+  right: -100px;
   z-index: 2;
   animation: spin 20s linear infinite;
   transform-origin: center;
@@ -182,19 +187,19 @@ body {
 
 .badge_right {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .badge_title {
-  font-size: 2.5rem;
+  font-size: 3rem;     
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .badge_des {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 18px;
+  font-size: 1.25rem;  
+  line-height: 1.8;
+  margin-bottom: 22px;
 }
 
 /* deals styles */
@@ -443,8 +448,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; 
+  padding: 0 24px;
+  min-height: 70px; 
   overflow-x: hidden; 
+}
+
+.nav_left img {
+  height: 60px; 
 }
 
 .nav_right ul {
@@ -462,9 +472,9 @@ body {
   display: block !important;
 }
 
-/* .div_right_show li {
+.div_right_show li {
   display: list-item; 
-} */
+}
 
 /* BANNER: Image first */
 .banner {
@@ -539,6 +549,7 @@ body {
   flex-direction: column;
   gap: 18px;
   padding: 60px 20px;
+  margin: 40px auto 0 auto;
 }
 
 .badge_left {
