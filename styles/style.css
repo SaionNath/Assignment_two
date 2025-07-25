@@ -551,10 +551,13 @@ body {
   margin: 40px auto 0 auto;
 }
 
+.badge_wrapper {
+  flex-direction: column;
+  gap: 20px;
+}
+
 .badge_left {
-  order: 1;
   width: 100%;
-  height: auto;
 }
 
 .flower_img {
@@ -563,13 +566,13 @@ body {
   object-fit: cover;
 }
 
-.trusted_badge {
+  .trusted_badge {
   display: none;
 }
 
 .badge_right {
-  order: 2;
   margin-top: 0;
+  text-align: start;
 }
 
 .badge_title {
@@ -579,7 +582,6 @@ body {
 
 .badge_des {
   font-size: 0.95rem;
-  text-align: start;
   margin-bottom: 12px;
 }
 
