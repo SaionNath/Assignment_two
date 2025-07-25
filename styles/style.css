@@ -165,8 +165,8 @@ body {
 
 .badge_left {
   position: relative;
-  width: 520px;
-  height: 560px;
+  /* width: 520px;
+  height: 560px; */
 }
 
 .flower_img {
