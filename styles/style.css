@@ -159,7 +159,7 @@ body {
   align-items: center;
   gap: 80px;
   max-width: 80%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
 }
 
@@ -197,7 +197,7 @@ body {
 }
 
 .badge_des {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 22px;
 }
