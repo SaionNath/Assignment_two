@@ -146,43 +146,43 @@ body {
 
 .badge {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   padding: 80px 0;
-  gap: 90px;
-  flex-wrap: wrap; 
-  max-width: 80%;  
   margin: 200px auto 0 auto;
+  max-width: 80%;
 }
 
 .badge_wrapper {
   display: flex;
-  justify-content: center;         
+  justify-content: center;
   align-items: center;
   gap: 80px;
   max-width: 80%;
-  margin: 0 auto;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .badge_left {
-  background: url('../assets/flower-store.png') no-repeat center center/cover;
-  width: 480px;   
-  height: 560px;  
   position: relative;
+  width: 520px;
+  height: 560px;
 }
 
-.badge_left::before {
-  content: "";
-  background: url('../assets/trusted-badge.png') no-repeat center center/contain;
-  width: 220px;
-  height: 220px;
+.flower_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trusted_badge {
   position: absolute;
   top: -110px;
   right: -100px;
-  z-index: 2;
+  width: 220px;
+  height: 220px;
   animation: spin 20s linear infinite;
-  transform-origin: center;
+  z-index: 2;
 }
 
 .badge_right {
@@ -191,13 +191,13 @@ body {
 }
 
 .badge_title {
-  font-size: 3rem;     
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
 .badge_des {
-  font-size: 1.25rem;  
+  font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 22px;
 }
@@ -545,9 +545,8 @@ body {
 }
 
   /* BADGE SECTION: image first without badge icon */
- .badge {
+.badge {
   flex-direction: column;
-  gap: 18px;
   padding: 60px 20px;
   margin: 40px auto 0 auto;
 }
@@ -555,14 +554,17 @@ body {
 .badge_left {
   order: 1;
   width: 100%;
-  height: 300px;
-  margin-top: 0;
-  background-size: cover;
-  background-position: center;
+  height: auto;
 }
 
-.badge_left::before {
-  display: none; 
+.flower_img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.trusted_badge {
+  display: none;
 }
 
 .badge_right {
