@@ -175,7 +175,7 @@ body {
   top: -150px;
   right: -110px;
   z-index: 2;
-  animation: spin 8s linear infinite;
+  animation: spin 20s linear infinite;
   transform-origin: center;
 }
 
@@ -192,7 +192,7 @@ body {
 .badge_des {
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 /* deals styles */
@@ -533,5 +533,125 @@ body {
 }
 
   /* BADGE SECTION: image first without badge icon */
+ .badge {
+  flex-direction: column;
+  gap: 18px;
+  padding: 60px 20px;
+}
+
+.badge_left {
+  order: 1;
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.badge_left::before {
+  display: none; 
+}
+
+.badge_right {
+  order: 2;
+  margin-top: 0;
+}
+
+.badge_title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.badge_des {
+  font-size: 0.95rem;
+  text-align: start;
+  margin-bottom: 12px;
+}
+
+  /* DEALS SECTION: upper then down */
+.deals {
+  padding: 60px 20px;
+}
+
+.deals_down {
+  flex-direction: column;
+}
+
+.deals_down_right h4 {
+  font-size: 1.6rem;
+}
+
+.deals_down_right p {
+  font-size: 1.1rem;
+}
+
+  /* CONTACT SECTION */
+.contact_image {
+  height: 40vh; /* Reduce height */
+  object-fit: cover;
+}
+
+.contact_overlay {
+  height: 40vh;
+  padding: 20px;
+ }
+
+.contact_title {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.contact_form {
+  flex-wrap: nowrap; /* Keep input and button in one line */
+  width: 80%;
+  max-width: 100%;
+}
+
+.contact_form input[type="email"] {
+  width: 80%;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.contact_form .orange-btn {
+  width: 30%;
+  font-size: 0.85rem;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+  /* FOOTER SECTION */
+.footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.footer_left,
+.footer_middle,
+.footer_right {
+  width: 100%;
+}
+
+.footer_middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer_right {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.footer_right img {
+  width: 24px;
+  height: 24px;
+}
 
 }
